@@ -1,0 +1,50 @@
+body{
+    background-color: aquamarine;
+}
+
+i {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    background: radial-gradient(at 30% 30%, #0000, #000a) red;
+    left: 10px;
+    top: 200px;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+i.start {
+    animation:
+        x 6s linear infinite alternate,
+        y 2s infinite cubic-bezier(0, 500, 1, 500);
+}
+
+@keyframes x {
+    to {
+        left: 350px;
+    }
+}
+
+@keyframes y {
+    to {
+        top: 199.5px;
+    }
+}
+
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    background: #c82629;
+    color: #fff;
+    margin-right: 35%;
+    margin-top: 300px;
+}
